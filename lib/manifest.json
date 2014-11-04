@@ -1,0 +1,19 @@
+{
+  "name": "Slack R",
+  "short_name": "slack-r",
+  "description": "Make slack easy to read and reply.",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://*.slack.com/*"],
+      "css": [
+        "css/slackr.css"
+      ],
+      "js": [
+        "js/jquery-2.1.1.min.js",
+        "js/slackr.js"
+      ]
+    }
+  ]
+}

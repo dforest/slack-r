@@ -1,0 +1,10 @@
+.message {
+    border-bottom: 1px solid #ddd  !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: .5rem !important;
+
+    &.slackr_mention,
+    .slackr_mention{
+      background: #fff3b8;
+    }
+}
