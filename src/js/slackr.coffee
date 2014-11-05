@@ -1,4 +1,6 @@
 $ ->
   $('#msgs_div').on "DOMNodeInserted", (e)=>
-    $(e.target).find(".mention").parent().parent().parent().addClass("slackr_mention")
-    $(e.target).find(".mention_channel").parent().parent().addClass("slackr_mention")
+    $ele = $(e.target).addClass("slackr_message")
+
+    $ele.find(".mention").parent().parent().parent().addClass("slackr_mention")
+    $ele.find(".mention_channel").parent().parent().addClass("slackr_mention")
